@@ -1,0 +1,1 @@
+Reactive is a library for large UI-driven applications to have a shared source of state.
