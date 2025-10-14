@@ -3,7 +3,7 @@ extends Reactive
 
 var value: float : set = _set_value
 
-func _set_value(new_value: float):
+func _set_value(new_value: float) -> float:
 	value = new_value
 	value_changed.emit(self)
 	return value

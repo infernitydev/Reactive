@@ -9,7 +9,7 @@ signal value_changed(reactive: Reactive)
 ## Value changes will be propagated to the owner.
 var owner: Reactive: set = _set_owner
 
-func _set_owner(new_owner: Reactive):
+func _set_owner(new_owner: Reactive) -> void:
 	if owner != null:
 		value_changed.disconnect(owner._propagate)
 	owner = new_owner
